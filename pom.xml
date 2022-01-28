@@ -21,13 +21,14 @@
     <module>webapp</module>
   </modules>
 
-  <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
-  </distributionManagement>
+  
+<distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>webapp-0.0.1-snapshots</name>
+        <url>https://devopsfaqs.jfrog.io/artifactory/demo-libs-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
 
   <build>
     <plugins>
