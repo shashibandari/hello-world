@@ -22,13 +22,21 @@
   </modules>
 
   
-<distributionManagement>
+<!--<distributionManagement>
     <snapshotRepository>
         <id>snapshots</id>
         <name>a0sgxethklw1g-artifactory-primary-0-snapshots</name>
         <url>https://devopsfaqs.jfrog.io/artifactory/demo-libs-snapshot-local</url>
     </snapshotRepository>
-</distributionManagement>
+</distributionManagement>-->
+         
+    <distributionManagement>
+    <site>
+      <id>site-server</id>
+      <name>Test Project Site</name>
+      <url>file:///tmp/maven-project-site</url>
+    </site>
+  </distributionManagement>
 
   <build>
     <plugins>
